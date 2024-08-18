@@ -13,12 +13,26 @@ namespace SoftwareProject.Formularios.Inventario
 {
     public partial class InformacionInv : Form
     {
+<<<<<<< HEAD
+        private SqlConnection cnx;
+        private int userID;
+
+        CompraArtExistente frm;
+
+        DataTable TabInventario;
+        public InformacionInv(SqlConnection conexion,int usuario)
+        {
+            InitializeComponent();
+            cnx = conexion;
+            userID = usuario;
+=======
         SqlConnection cnx;
         DataTable TabInventario;
         public InformacionInv(SqlConnection conexion)
         {
             InitializeComponent();
             cnx = conexion;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -78,7 +92,11 @@ namespace SoftwareProject.Formularios.Inventario
 
                 if (form1 != null)
                 {
+<<<<<<< HEAD
+                    form1.OpenChildForm(new EditarInv(cnx, ArticuloID, Articulo, Descripcion, Medida, Existencia, Proveedor, Rentabilidad, Estado,userID));
+=======
                     form1.OpenChildForm(new EditarInv(cnx, ArticuloID, Articulo, Descripcion, Medida, Existencia, Proveedor, Rentabilidad, Estado));
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                 }
 
             }
@@ -191,5 +209,49 @@ namespace SoftwareProject.Formularios.Inventario
                 MessageBox.Show("Por favor seleccione una fila para editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+<<<<<<< HEAD
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ComprarArt(SqlConnection cnx)
+        {
+            String Articulo, Descripcion, Medida, Proveedor;
+
+            try
+            {
+                Articulo = TabInventario.DefaultView[dataGridView1.CurrentRow.Index]["Articulo"].ToString();
+                Descripcion = TabInventario.DefaultView[dataGridView1.CurrentRow.Index]["Descripcion"].ToString();
+                Medida = TabInventario.DefaultView[dataGridView1.CurrentRow.Index]["Medida"].ToString();
+                Proveedor = TabInventario.DefaultView[dataGridView1.CurrentRow.Index]["Proveedor"].ToString();
+
+                Menu form1 = Application.OpenForms.OfType<Menu>().FirstOrDefault();
+
+                if (form1 != null)
+                {
+                    frm =new CompraArtExistente(cnx,userID, Articulo, Medida, Proveedor, Descripcion);
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Ocurrio un Error" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnComprarArt_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                ComprarArt(cnx);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor seleccione el articulo que desea Comprar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     }
 }

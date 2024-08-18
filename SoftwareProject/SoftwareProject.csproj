@@ -47,12 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <Compile Include="Formularios\AsignarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\AsignarEmpleado.Designer.cs">
       <DependentUpon>AsignarEmpleado.cs</DependentUpon>
     </Compile>
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <Compile Include="Formularios\CARLITOS1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +68,15 @@
     <Compile Include="Formularios\Compra.Designer.cs">
       <DependentUpon>Compra.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Formularios\CompraArtExistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CompraArtExistente.Designer.cs">
+      <DependentUpon>CompraArtExistente.cs</DependentUpon>
+    </Compile>
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <Compile Include="Formularios\CRUD Clientes\ConsultarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,15 @@
     <Compile Include="Formularios\Empleados\RegistroEmpleados.Designer.cs">
       <DependentUpon>RegistroEmpleados.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Formularios\NuevoExistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\NuevoExistente.Designer.cs">
+      <DependentUpon>NuevoExistente.cs</DependentUpon>
+    </Compile>
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <Compile Include="Formularios\Paquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +170,10 @@
     <Compile Include="Formularios\SolicitarServicio.Designer.cs">
       <DependentUpon>SolicitarServicio.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+=======
     <Compile Include="Formularios\VerSolicitudes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,12 +185,19 @@
     <EmbeddedResource Include="Formularios\AsignarEmpleado.resx">
       <DependentUpon>AsignarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <EmbeddedResource Include="Formularios\CARLITOS1.resx">
       <DependentUpon>CARLITOS1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Compra.resx">
       <DependentUpon>Compra.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Formularios\CompraArtExistente.resx">
+      <DependentUpon>CompraArtExistente.cs</DependentUpon>
+    </EmbeddedResource>
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <EmbeddedResource Include="Formularios\CRUD Clientes\ConsultarClientes.resx">
       <DependentUpon>ConsultarClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +225,12 @@
     <EmbeddedResource Include="Formularios\Empleados\RegistroEmpleados.resx">
       <DependentUpon>RegistroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Formularios\NuevoExistente.resx">
+      <DependentUpon>NuevoExistente.cs</DependentUpon>
+    </EmbeddedResource>
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <EmbeddedResource Include="Formularios\Paquetes.resx">
       <DependentUpon>Paquetes.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,9 +240,12 @@
     <EmbeddedResource Include="Formularios\RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
     <EmbeddedResource Include="Formularios\VerSolicitudes.resx">
       <DependentUpon>VerSolicitudes.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

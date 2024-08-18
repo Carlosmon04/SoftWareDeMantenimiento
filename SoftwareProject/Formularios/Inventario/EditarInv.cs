@@ -16,6 +16,20 @@ namespace SoftwareProject.Formularios.Inventario
     {
         SqlConnection cnx;
         String Articulo, Descripcion, Medida, Existencia, Proveedor, Rentabilidad, Estado;
+<<<<<<< HEAD
+        private int UserId;
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -25,7 +39,11 @@ namespace SoftwareProject.Formularios.Inventario
 
             if (form1 != null)
             {
+<<<<<<< HEAD
+                form1.OpenChildForm(new InformacionInv(cnx,UserId));
+=======
                 form1.OpenChildForm(new InformacionInv(cnx));
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             }
         }
 
@@ -49,7 +67,11 @@ namespace SoftwareProject.Formularios.Inventario
 
                 if (form1 != null)
                 {
+<<<<<<< HEAD
+                    form1.OpenChildForm(new InformacionInv(cnx,UserId));
+=======
                     form1.OpenChildForm(new InformacionInv(cnx));
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                 }
 
             }
@@ -61,7 +83,11 @@ namespace SoftwareProject.Formularios.Inventario
 
         int ArticuloID;
 
+<<<<<<< HEAD
+        public EditarInv(SqlConnection conexion, int articuloID, String articulo, string descripcion, String medida, String existencia, string proveedor, string rentabilidad, string estado, int usuario)
+=======
         public EditarInv(SqlConnection conexion, int articuloID, String articulo, string descripcion, String medida, String existencia, string proveedor, string rentabilidad, string estado)
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         {
             InitializeComponent();
             cnx = conexion;
@@ -73,6 +99,10 @@ namespace SoftwareProject.Formularios.Inventario
             Proveedor = proveedor;
             Rentabilidad = rentabilidad;
             Estado = estado;
+<<<<<<< HEAD
+            UserId = usuario;
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         }
 
         private void EditarInv_Load(object sender, EventArgs e)

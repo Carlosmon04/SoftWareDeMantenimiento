@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -47,10 +51,16 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtArticulo = new System.Windows.Forms.TextBox();
             this.txtProveedor = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+=======
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +76,18 @@
             this.panel1.Size = new System.Drawing.Size(1058, 648);
             this.panel1.TabIndex = 2;
             // 
+<<<<<<< HEAD
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SoftwareProject.Properties.Resources.inventario;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(485, 494);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -93,6 +115,10 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(564, 645);
             this.panel2.TabIndex = 8;
+<<<<<<< HEAD
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // 
             // cbxEstado
             // 
@@ -288,6 +314,10 @@
             this.textBox5.TabIndex = 15;
             this.textBox5.Text = "Articulo";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+<<<<<<< HEAD
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // 
             // txtArticulo
             // 
@@ -303,6 +333,8 @@
             this.txtProveedor.Size = new System.Drawing.Size(240, 22);
             this.txtProveedor.TabIndex = 4;
             // 
+<<<<<<< HEAD
+=======
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SoftwareProject.Properties.Resources.inventario;
@@ -312,6 +344,7 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // EditarInv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -323,9 +356,15 @@
             this.Text = "EditarInv";
             this.Load += new System.EventHandler(this.EditarInv_Load);
             this.panel1.ResumeLayout(false);
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+=======
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             this.ResumeLayout(false);
 
         }

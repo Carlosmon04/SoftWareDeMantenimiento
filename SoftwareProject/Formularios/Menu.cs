@@ -187,13 +187,21 @@ namespace SoftwareProject
 
         private void btnCompraInv_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            OpenChildForm(new NuevoExistente(cnx, userID));
+=======
             OpenChildForm(new Compra(cnx, userID));
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             Ocultar();
         }
 
         private void btnInfoInv_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            OpenChildForm(new InformacionInv(cnx,userID));
+=======
             OpenChildForm(new InformacionInv(cnx));
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             Ocultar();
         }
 
@@ -259,8 +267,11 @@ namespace SoftwareProject
 
         private void btnVerSolicitudes_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
             VerSolicitudes vs = new VerSolicitudes(cnx, userID);
             vs.Visible = true;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             Ocultar();
         }
 

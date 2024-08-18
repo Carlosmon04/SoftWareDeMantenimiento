@@ -35,6 +35,15 @@
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtArticulo = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.cmbMedida = new System.Windows.Forms.ComboBox();
+=======
             this.txtMedida = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +51,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             this.SuspendLayout();
             // 
             // label1
@@ -110,6 +120,8 @@
             this.txtArticulo.Size = new System.Drawing.Size(147, 22);
             this.txtArticulo.TabIndex = 7;
             // 
+<<<<<<< HEAD
+=======
             // txtMedida
             // 
             this.txtMedida.Location = new System.Drawing.Point(537, 200);
@@ -118,6 +130,7 @@
             this.txtMedida.TabIndex = 8;
             this.txtMedida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
@@ -140,6 +153,16 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Costo";
             // 
+<<<<<<< HEAD
+            // txtCosto
+            // 
+            this.txtCosto.Location = new System.Drawing.Point(537, 300);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(147, 22);
+            this.txtCosto.TabIndex = 11;
+            this.txtCosto.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+=======
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(537, 300);
@@ -147,6 +170,7 @@
             this.txtNombre.Size = new System.Drawing.Size(147, 22);
             this.txtNombre.TabIndex = 11;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // 
             // label6
             // 
@@ -178,11 +202,39 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+<<<<<<< HEAD
+            // cmbMedida
+            // 
+            this.cmbMedida.FormattingEnabled = true;
+            this.cmbMedida.Items.AddRange(new object[] {
+            "Unidad",
+            "Metro",
+            "Centimetro",
+            "Gramos",
+            "Kilogramos",
+            "Libra"});
+            this.cmbMedida.Location = new System.Drawing.Point(537, 197);
+            this.cmbMedida.Name = "cmbMedida";
+            this.cmbMedida.Size = new System.Drawing.Size(147, 24);
+            this.cmbMedida.TabIndex = 15;
+            // 
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             // Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1201, 630);
+            this.Controls.Add(this.cmbMedida);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtCosto);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button1);
+=======
             this.ClientSize = new System.Drawing.Size(1198, 594);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtDescripcion);
@@ -191,6 +243,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtMedida);
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
             this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtProveedor);
@@ -215,6 +268,15 @@
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txtArticulo;
+<<<<<<< HEAD
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCosto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cmbMedida;
+=======
         private System.Windows.Forms.TextBox txtMedida;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
@@ -222,5 +284,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button button2;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     }
 }

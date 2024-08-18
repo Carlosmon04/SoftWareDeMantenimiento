@@ -16,7 +16,12 @@ namespace SoftwareProject.Formularios
         private SqlConnection cnx;
         private int userID;
 
+<<<<<<< HEAD
+        SqlCommand cmd3;
+        SqlDataReader data;
+=======
         SqlCommand cmd;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         public Compra()
         {
             InitializeComponent();
@@ -29,7 +34,12 @@ namespace SoftwareProject.Formularios
         }
         private void Compra_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            
+            cmbMedida.SelectedIndex.ToString();
+=======
 
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         }
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
@@ -51,11 +61,25 @@ namespace SoftwareProject.Formularios
         {
             try
             {
+<<<<<<< HEAD
+                        SqlCommand cmd3 = new SqlCommand("spCompra", cnx);
+                        cmd3.CommandType = CommandType.StoredProcedure;
+                        cmd3.Parameters.AddWithValue("@NombreArt", txtArticulo.Text);
+                        cmd3.Parameters.AddWithValue("@Cantidad", txtCantidad.Text);
+                        cmd3.Parameters.AddWithValue("@TipoMedida", cmbMedida.SelectedIndex.ToString());
+                        cmd3.Parameters.AddWithValue("@Pro", txtProveedor.Text);
+                        cmd3.Parameters.AddWithValue("@Costo", txtCosto.Text);
+                        cmd3.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text);
+                        cmd3.ExecuteNonQuery();
+
+                txtArticulo.Clear(); txtCantidad.Clear(); txtProveedor.Clear(); txtCosto.Clear(); txtDescripcion.Clear();
+=======
                 SqlCommand cmd = new SqlCommand("spCompra", cnx);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@NombreArt",txtArticulo.Text);
                 cmd.ExecuteNonQuery();
                 SqlDataReader reader = cmd.ExecuteReader();
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
 
 
             }
@@ -64,5 +88,13 @@ namespace SoftwareProject.Formularios
                 MessageBox.Show("Ocurrio un Error " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+<<<<<<< HEAD
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+=======
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
     }
 }

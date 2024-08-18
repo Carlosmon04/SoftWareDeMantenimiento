@@ -15,7 +15,10 @@ namespace SoftwareProject.Formularios
     {
         private SqlConnection cnx;
         private int userID;
+<<<<<<< HEAD
+=======
         private int ServicioID;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
         DataTable TabServicios;
         DateTime Visita;
         private int year;
@@ -38,17 +41,29 @@ namespace SoftwareProject.Formularios
 
             try
             {
+<<<<<<< HEAD
+                 TabServicios = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter("spServiciosVer",cnx);
+=======
                 TabServicios = new DataTable();
                 SqlDataAdapter adapter = new SqlDataAdapter("spServiciosVer", cnx);
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                 adapter.Fill(TabServicios);
                 dataGridView1.DataSource = TabServicios;
                 dataGridView1.ReadOnly = true;
                 dataGridView1.Columns["SerciciosId"].Visible = false;
+<<<<<<< HEAD
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.AllowUserToResizeRows = false;
+                dataGridView1.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
+=======
                 dataGridView1.Columns["Estado"].Visible = false;
                 dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dataGridView1.AllowUserToAddRows = false;
                 dataGridView1.AllowUserToResizeRows = false;
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
 
             }
             catch (SqlException ex)
@@ -65,11 +80,18 @@ namespace SoftwareProject.Formularios
                 Visita = new DateTime();
                 if (dataGridView1.Rows.Count > 0)
                 {
+<<<<<<< HEAD
+                    int servicioID = (int)TabServicios.DefaultView[dataGridView1.CurrentRow.Index]["SerciciosId"];
+                    Console.WriteLine(servicioID);
+                    if (MessageBox.Show("Seguro que quieres solicitar este servicio? ", "???", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+=======
                     ServicioID = (int)TabServicios.DefaultView[dataGridView1.CurrentRow.Index]["SerciciosId"];
                     if (MessageBox.Show("Seguro que quieres solicitar este servicio? ", "???", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         Console.WriteLine(ServicioID);
 
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                         MessageBox.Show("Eliga Cuando desea la Visita", "Elige Con Gusto", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     
                     }
@@ -113,12 +135,19 @@ namespace SoftwareProject.Formularios
                     cmd.Parameters.AddWithValue("@usuario", userID);
                     cmd.Parameters.AddWithValue("@fechahora", FechaQuerida());
                     cmd.Parameters.AddWithValue("@fechasalida", FechaQuerida().AddHours(1));
+<<<<<<< HEAD
+=======
                     cmd.Parameters.AddWithValue("@ServicioID", ServicioID);
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                    
                     cmd.ExecuteNonQuery();
                     cmd.Dispose();
 
+<<<<<<< HEAD
+
+=======
                     //Implementar logica de las horas (Pendiente)
+>>>>>>> ee1d9478137acdd7a8e8f785df6cf51d7f1f35be
                 }
                 catch (SqlException ex)
                 {
